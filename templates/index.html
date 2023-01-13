@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Iris Classification</title>
+<style>
+  h1 {
+      color : red
+}
+</style>
+
 </head>
 <body>
     <form action="{{ url_for('predict')}}" method="POST">
@@ -13,6 +19,6 @@
       
         <input type=submit value=Submit>
    </form>
-    My final prediction: {{ predict }}
+    <h1> My final prediction: {{ predict }} <h1>
 </body>
 </html>
